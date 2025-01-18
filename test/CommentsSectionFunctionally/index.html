@@ -1,0 +1,37 @@
+<!--
+
+Comment Section Test
+
+In this folder, I will be testing how the comment will work using basic javascript functionality.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href=".\dist\css\style.css">
+        <title>Comment Section Testing</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Comment Section Testing</h1>
+        </header>
+
+        <div class="comment-section">
+            <h2>Comments:</h2>
+            <textarea id="commentInput" placeholder="Please write a comment..." rows="4" style="width: 51%; height: 100px; resize: none;"></textarea>
+            <br>
+            <button onclick="addComment()">Submit</button>
+            <div id="comments"></div>
+            <!-- Note to self: Add a height to the comment-section to add a 'view more' button at the end for more comments -->
+        </div>
+
+        <!-- Links back to the javascript file. -->
+        <script type="text/javascript" src=".\dist\js\main.js"></script>
+    </body>
+</html>
+
+<!-- Credits to https://www.quora.com/How-do-you-make-a-comment-section-in-HTML. -->
