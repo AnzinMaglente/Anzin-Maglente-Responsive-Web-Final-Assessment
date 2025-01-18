@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">                                                              <!-- charset is an attribute that sets what kind of characters will be used in the website. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">              <!-- viewport is an attribute specifies how the website will react to a certain device -->
+        <!-- bootstrap stylesheet-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- W3 Stylesheet -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+        <!-- jquery script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- bootstrap script -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/79e86895a5.js" crossorigin="anonymous"></script>
+
+        <title>Title of Exercise</title>
+    </head>
+
+    <body>
+        <header class="text-center">
+
+            <div class="header-hamburger-menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <div class="nav-mobile w3-animate-right">
+                    <a href="/">Home</a>
+                    <a href="">About Me</a>
+                    <a href="">Blog</a>
+                    <a href="">Store</a>
+                    <a href="/contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="text-position">
+                <h1>FlickQuest</h1>
+                <h3>Where Good Media Stays</h3>
+            </div>
+
+            <ul class="header-page-navigation">
+                <li><a href="">About Me</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <ul class="header-misc-navigation">
+                <li><a href="">Search</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="/signup">Signup</a></li>
+            </ul>
+        </header>
+
+        <nav class="primary-navigation">
+            <ul class="socials-navigation">
+                <li><a href="#"><i class="fab fa-facebook fa-sm"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter fa-sm"></i></a></li>
+                <li><a href="#"><i class="fab fa-google fa-sm"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-sm"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube fa-sm"></i></a></li>
+            </ul>
+            <ul class="page-navigation">
+                <li><a href="">About Me</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <ul class="misc-navigation">
+                <li><a href="">Search</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="grid-article-container">
+            <div class="grid-article-content">
+                <img src=".\media\images\the_wild_robot.jpeg" class="image">
+                <h3>The Wild Robot</h3>
+                <p>
+                    I don't usually watch movies on my own and rarely do I feel like the need to rewatch them twice in the same week to fully immerse myself in the world. But when I first saw the wild robot I was simply amazed, not only for the fact of it's wonderful animation but also the gripping story of a robot and her adopted runt. I just had to watch it a second time, and a third time soon enough. Now if you haven't seen it yourself, I highly recommend it.
+                    <br><br>
+                    Lorem ipsum odor amet, consectetuer adipiscing elit. Augue efficitur semper integer cubilia eget dignissim curae. Integer id enim litora suspendisse lectus proin. Class maximus ligula pharetra nam suspendisse rhoncus magna non. Quis malesuada eget mauris nunc, mollis purus risus nibh. Consectetur semper montes vivamus leo nostra ipsum purus ultricies. Eros tempor curabitur consequat praesent finibus. Erat posuere lobortis quis massa scelerisque ultricies tortor at.
+                    <br><br>
+                    Enim nisl nisl a accumsan taciti litora maximus. Ullamcorper maecenas urna commodo integer massa purus velit erat. Tristique vestibulum quis consequat vitae curae parturient. Montes ornare bibendum euismod elit hac auctor. Orci malesuada malesuada in volutpat luctus. Aliquam sollicitudin vivamus dapibus consectetur morbi quis platea proin vitae. Cursus fringilla non suscipit, amet mus libero? Pharetra elementum tortor taciti duis himenaeos mus. Ultricies phasellus ut duis duis consectetur.
+                    <br><br>
+                    Class cursus facilisi sed mi lacinia massa; cursus pulvinar eros. Senectus mi egestas leo molestie taciti dolor inceptos nullam. Ultrices nunc taciti sollicitudin montes ut. Interdum natoque parturient pulvinar risus semper. In diam non ex integer malesuada. Facilisis egestas fringilla tincidunt class nisi curae. Vitae elementum sit ante eget faucibus class at auctor nisl. Hac eros posuere dis dis nunc tincidunt nunc facilisis.
+            </div>
+            
+            <div class="grid-article-author">
+                <image src="./media/images/Author Picture.jpg" class="author-image"></image>
+                <h3>About the Author</h3>
+                Anzin Maglente is a student from Bathspa University who is interested in all sorts of things. From the mythical to the strange. He enjoys learning.
+            </div>
+
+            <div class="grid-article-comments comment-section">
+                <h2>Comments:</h2>
+                <textarea id="commentInput" placeholder="Please write a comment..." rows="4" style="width: 100%; height: 100px; resize: none;"></textarea>
+                <br>
+                <button onclick="addComment()">Submit</button>
+                <div id="comments"></div>
+            </div>
+                
+            </div>
+        </div>
+        
+        <footer>
+            <div class="grid-footer-container">
+                <div class="grid-footer-info">
+                    <h3>FlickQuest</h3>
+                    <hr class="small-hr">
+                    <p>
+                        Welcome to FLickQuest, your go-to place for finding good media whether you are looking for books, movies or games. This website has it all, if you need any help feel free to contact the developer.
+                    </p>
+                </div>
+                <div class="grid-footer-product">
+                    <h3>Products</h3>
+                    <hr class="small-hr">
+                    <ul class="list_style_remove">
+                        <li><a href="">Games</a></li>
+                        <li><a href="">Music</a></li>
+                        <li><a href="">Art</a></li>
+                        <li><a href="">Books</a></li>
+                    </ul>
+                </div>
+                <div class="grid-footer-pages">
+                    <h3>Navigation</h3>
+                    <hr class="small-hr">
+                    <ul class="list_style_remove">
+                        <li><a href="">About Me</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="">Store</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="grid-footer-contact">
+                    <h3>Contacts</h3>
+                    <hr class="small-hr">
+                    <ul class="list_style_remove">
+                        <li><i class="fas fa-home fa-sm"></i> Deira, Dubai</li>
+                        <li><i class="fas fa-envelope fa-sm"></i> anzin.maglente@gmail.com</li>
+                        <li><i class="fas fa-phone fa-sm"></i> + 971 50 268 5359</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-end">
+                <div class="footer-copyright">@ 2025 Copyright Anzin Maglente</div>
+
+                <div class="footer-socials">
+                    <ul class="list_style_remove">
+                        <li><a href="#"><i class="fab fa-facebook fa-sm"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-sm"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google fa-sm"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin fa-sm"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube fa-sm"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- This is for static javascript files. -->
+        <script type="text/javascript" src="/dist/js/commentSection.js"></script>
+    </body>
+</html>
