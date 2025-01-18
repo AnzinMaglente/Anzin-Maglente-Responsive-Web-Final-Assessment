@@ -1,0 +1,30 @@
+@use "../abstracts/_variables.scss";
+
+@font-face {
+  font-family: Pluto-Medium;
+  src: url("../../../media/fonts/HvDTrial_Pluto-Medium-BF6486959ddd7bf.otf");
+}
+
+h1 {
+    font-family: Pluto-Medium;
+}
+
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: ($breakpoint-tablet - 1)) {
+    .resize-text-header {
+        font-size: 2.5vw;
+    }
+
+    .resize-text {
+        font-size: 2vw;
+    }
+}
+@media screen and (min-width: $breakpoint-tablet) {
+    .resize-text-header {
+        font-size: 2vw;
+    }
+    
+    .resize-text {
+        font-size: 1.5vw;
+    }
+}

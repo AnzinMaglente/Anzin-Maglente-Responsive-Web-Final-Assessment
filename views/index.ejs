@@ -1,0 +1,245 @@
+<!--
+
+Task Title
+
+Explanation of task.
+
+-->
+
+<!--
+The use of '.ejs' file
+
+ejs files or embedded javascript files allows for the use of dynamic content by embedding JavaScript within HTML.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">                                                              <!-- charset is an attribute that sets what kind of characters will be used in the website. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">              <!-- viewport is an attribute specifies how the website will react to a certain device -->
+        <!-- bootstrap stylesheet-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!-- W3 Stylesheet -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+        <!-- jquery script -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <!-- bootstrap script -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/79e86895a5.js" crossorigin="anonymous"></script>
+
+        <title>FlickQuest</title>
+    </head>
+
+    <body>
+        <header class="text-center">
+
+            <div class="header-hamburger-menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <div class="nav-mobile w3-animate-right">
+                    <a href="/">Home</a>
+                    <a href="">About Me</a>
+                    <a href="">Blog</a>
+                    <a href="">Store</a>
+                    <a href="/contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="text-position">
+                <h1>FlickQuest</h1>
+                <h3>Where Good Media Stays</h3>
+            </div>
+
+            <ul class="header-page-navigation">
+                <li><a href="">About Me</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <ul class="header-misc-navigation">
+                <li><a href="">Search</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="/signup">Signup</a></li>
+            </ul>
+        </header>
+
+        <nav class="primary-navigation">
+            <ul class="socials-navigation">
+                <li><a href="#"><i class="fab fa-facebook fa-sm"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter fa-sm"></i></a></li>
+                <li><a href="#"><i class="fab fa-google fa-sm"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin fa-sm"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube fa-sm"></i></a></li>
+            </ul>
+            <ul class="page-navigation">
+                <li><a href="">About Me</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="">Store</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <ul class="misc-navigation">
+                <li><a href="">Search</a></li>
+                <li><a href="">Cart</a></li>
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/login">Login</a></li>
+            </ul>
+        </nav>
+        
+        <div class="grid-index-container">
+            <!-- Make this into a carousel -->
+            <div class="grid-index-main">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                  
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                      <div class="item active image_wrapper">
+                        <img src=".\media\images\Papers.jpg" alt="Announcements">
+                        <div class="overlay overlay_cover"></div>
+                        <div class="overlay overlay_text_cover_left">
+                            <h3 class="left_align resize-text-header">Annoucement</h3>
+                            <p class="left_align resize-text">
+                                Hi there! Welcome to my website. If it's your first time 
+                                around here, there's a lot of things to explore. This website
+                                is mainly for me to talk about my thoughts on all kinds of media
+                            </p>
+                            <button type="button" class="read-more-button">Read more</button>
+                        </div>
+                      </div>
+                  
+                      <div class="item image_wrapper">
+                        <img src=".\media\images\the_wild_robot.jpeg" class="image">
+                        <div class="overlay overlay_cover"></div>
+                        <div class="overlay overlay_text_cover_left">
+                            <h3 class="left_align resize-text-header">The Wild Robot</h3>
+                            <p class="left_align resize-text">
+                                " When I first saw the wild robot I was simply amazed, 
+                                not only for the fact of it's wonderful animation but the 
+                                gripping story of a robot and her adopted runt... "
+                            </p>
+                            <button type="button" class="read-more-button" onclick="location.href='/article'">Read more</button>
+                        </div>
+                      </div>
+                  
+                      <div class="item">
+                        <img src=".\media\images\rain_world.jpg" alt="Announcements">
+                        <div class="overlay overlay_cover"></div>
+                        <div class="overlay overlay_text_cover_left">
+                            <h3 class="left_align resize-text-header">Rain World</h3>
+                                <p class="left_align resize-text">
+                                    " Have you ever thought what is it like to live in the
+                                    wild as a small creature without many means of protection?
+                                    Well, I just might have a game for you... "
+                                </p>
+                                <button type="button" class="read-more-button">Read more</button>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+
+            <div class="grid-index-feature-one image_wrapper">
+                <img src=".\media\images\Movies Category.png" class="image_cover">
+                <div class="overlay overlay_cover center"></div>
+                <div class="overlay overlay_cover_center"><h3 class="center">Movie Reviews</h3></div>
+            </div>
+            <div class="grid-index-feature-two image_wrapper">
+                <img src=".\media\images\Games Category.png" class="image_cover">
+                <div class="overlay overlay_cover center"></div>
+                <div class="overlay overlay_cover_center"><h3 class="center">Game Reviews</h3></div>
+            </div>
+
+            <div class="grid-index-feature-three image_wrapper">
+                <img src=".\media\images\My Works Category.png" class="image_cover">
+                <div class="overlay overlay_cover center"></div>
+                <div class="overlay overlay_cover_center"><h3 class="center">My Works</h3></div>
+            </div>
+            <div class="grid-index-feature-four image_wrapper">
+                <img src=".\media\images\Update Category.png" class="image_cover">
+                <div class="overlay overlay_cover"></div>
+                <div class="overlay overlay_cover_center"><h3 class="center">Updates</h3></div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="grid-footer-container">
+                <div class="grid-footer-info">
+                    <h3>FlickQuest</h3>
+                    <hr class="small-hr">
+                    <p>
+                        Welcome to FLickQuest, your go-to place for finding good media whether you are looking for books, movies or games. This website has it all, if you need any help feel free to contact the developer.
+                    </p>
+                </div>
+                <div class="grid-footer-product">
+                    <h3>Products</h3>
+                    <hr class="small-hr">
+                    <ul class="list_style_remove">
+                        <li><a href="">Games</a></li>
+                        <li><a href="">Music</a></li>
+                        <li><a href="">Art</a></li>
+                        <li><a href="">Books</a></li>
+                    </ul>
+                </div>
+                <div class="grid-footer-pages">
+                    <h3>Navigation</h3>
+                    <hr class="small-hr">
+                    <ul class="list_style_remove">
+                        <li><a href="">About Me</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="">Store</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="grid-footer-contact">
+                    <h3>Contacts</h3>
+                    <hr class="small-hr">
+                    <ul class="list_style_remove">
+                        <li><i class="fas fa-home fa-sm"></i> Location Name</li>
+                        <li><i class="fas fa-envelope fa-sm"></i> Gmail</li>
+                        <li><i class="fas fa-phone fa-sm"></i> Phone no</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-end">
+                <div class="footer-copyright">@ 2025 Copyright Company Name</div>
+
+                <div class="footer-socials">
+                    <ul class="list_style_remove">
+                        <li><a href="#"><i class="fab fa-facebook fa-sm"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-sm"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google fa-sm"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin fa-sm"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube fa-sm"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!-- This is for static javascript files. -->
+        <script type="text/javascript" src="/dist/js/main.js"></script>
+    </body>
+</html>

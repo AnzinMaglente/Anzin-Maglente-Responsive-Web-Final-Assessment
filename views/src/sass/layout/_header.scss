@@ -1,0 +1,135 @@
+@use "../abstracts/_variables.scss";
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: ($breakpoint-tablet - 1)) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+
+    background-color: $secondary-bg-color;
+    color: $primary-text-color;
+    
+    .text-position,
+    .header-navigation {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
+    .text-position {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin: 0 10px;
+    }
+    h3 {
+      margin: auto 15px 0;
+    }
+
+    .header-page-navigation {
+      display: none;
+    }
+
+    .header-misc-navigation {
+      display: inline-flex;
+      overflow: hidden;
+      margin-bottom: -10px;
+      
+      justify-content: flex-end;
+      
+      list-style-type: none;
+      li a {
+        transition: all 0.5s ease-in-out 0s;
+      }
+    }
+
+    .header-misc-navigation * {
+      padding: 20px 10px;
+      text-align: center;
+  
+      color: $primary-text-color;
+    }
+
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet) and (max-width: ($breakpoint-desktop - 1)){
+  header {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+
+    background-color: $primary-bg-color;
+    color: $primary-text-color;
+
+    .text-position,
+    .header-navigation {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
+    .text-position {
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin: 0 10px;
+    }
+    h3 {
+      margin: auto 15px 0;
+    }
+
+    .header-page-navigation {
+      display: inline-flex;
+      overflow: hidden;
+      margin-bottom: -10px;
+      
+      justify-content: flex-end;
+      
+      list-style-type: none;
+      li a {
+        transition: all 0.5s ease-in-out 0s;
+      }
+    }
+
+    .header-page-navigation * {
+      padding: 20px 10px;
+      text-align: center;
+  
+      color: $primary-text-color;
+    }
+
+    .header-misc-navigation {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  header {
+    padding: 10px 0 15px;
+
+    /* Color */
+    background-color: $primary-bg-color;
+    color: $primary-text-color;
+
+    h1 {
+      margin: 0;
+    }
+    
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .header-page-navigation,
+  .header-misc-navigation {
+    display: none;
+  }
+}
