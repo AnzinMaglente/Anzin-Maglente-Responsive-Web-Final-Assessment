@@ -1,0 +1,14 @@
+@use "../abstracts/_variables.scss";
+
+.auth-container {
+  max-width: fit-content;
+  padding: 20px;
+  margin: 30px auto;
+
+  background-color: $secondary-bg-color;
+  color: $white1;
+  border-color: $black1;
+
+  border-style: solid;
+  overflow: hidden;
+}

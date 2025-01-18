@@ -1,0 +1,48 @@
+@use "../abstracts/_variables.scss";
+
+@media screen and (min-width: $breakpoint-mobile) and (max-width: ($breakpoint-tablet - 1)) {
+  .header-hamburger-menu {
+    padding: 10px 10px;
+    background-color: $secondary-bg-color;
+    color: $white1;
+  }
+
+  .checkbtn {
+    font-size: 1.5rem;
+    color: $white1;
+    cursor: pointer;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  #check {
+    visibility: hidden;
+  }
+
+  #check:checked ~ .nav-mobile {
+    display: block;
+  }
+
+  .nav-mobile {
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    background: $secondary-bg-color;
+    z-index: 1;
+    width: 200px;
+  }
+   
+  .nav-mobile a {
+    color: $white1;
+    padding: 1rem 1.5rem;
+    display: block;
+  }
+}
+
+@media screen and (min-width: $breakpoint-tablet){
+  .header-hamburger-menu {
+    display: none;
+  } 
+}
