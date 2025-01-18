@@ -1,3 +1,10 @@
+## TO START INSTALL THESE MODULES USING NPM I
+- express
+- body-parser
+- mongoose
+- bcrypt
+- dialog
+
 ## TO CREATE A SERVER.
 
 1. Go to console and find the js folder.
